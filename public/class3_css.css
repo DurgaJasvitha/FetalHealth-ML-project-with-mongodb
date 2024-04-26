@@ -1,0 +1,93 @@
+
+
+body{
+
+    background: url("./BG-Pregnancy.jpg");
+    background-size: cover;
+    /*filter: blur(5px);*/
+    background-color: rgb(255, 255, 255);
+
+}
+
+.result h{
+    font-size: 48px;
+    text-align:center;
+    padding:20px ;
+    font-family: Georgia }
+/*div.container{
+    
+    background-color: rgba(239, 238, 239, 0.3);
+   width: 100%;
+   font-size: 18px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   border-radius: 10px;
+   border:1px solid rgba(226, 219, 226, 0.3);
+   box-shadow: 2px 2px 15px rgba();
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}*/
+a{
+    font-size: 20px;
+}
+.result p1{
+    
+   
+    font-size: 20px;
+    font-family:'Gill Sans';
+}
+.result{
+    max-width: 650px;
+    position: relative;
+    display: block;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255,0.4);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;  
+}
+.box{
+    max-width: 650px;
+    position: relative;
+    display: block;
+   
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255,0.4);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    padding: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.box h1{
+    font-size: 48px;
+}
+#text{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space : nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    animation: 
+        typing 4s steps(15),
+        cursor .4s step-end infinite alternate;
+}
+
+
+@keyframes typing {
+    from{width: 0}
+    
+}
+
+

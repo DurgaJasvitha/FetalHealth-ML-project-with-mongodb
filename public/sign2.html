@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Class2</title>
+    <link rel="stylesheet"
+    href="class3_css.css" type="text/css">
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+   <!--<div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div> -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-6 main">
+
+               <!--<h1> Class 2: Suspect</h1>-->
+
+            </div>
+
+
+            <div class="col-md-3">
+            </div>
+
+        </div>
+    </div>
+    <div class="result">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <h>Class 2: Suspect</h><br>
+        <p1>"Fetal health suspect" denotes concerns arising during pregnancy regarding the unborn baby's well-being. Healthcare providers note various factors prompting suspicions about optimal fetal health, including abnormal ultrasound findings, maternal health conditions like diabetes or infections, irregular fetal movements or heart rates, prior pregnancy complications, and genetic worries. This term flags the need for close monitoring and additional assessments to confirm or rule out any issues affecting fetal development. Thorough evaluations are vital to manage potential problems, ensuring the health and care of both the mother and the unborn child.</p1>
+        <br>
+        <p1>SCROLL DOWN FOR MORE INFO</p1>
+    </div>
+   <a href="https://my.clevelandclinic.org/health/diseases/22190-high-risk-pregnancy" target="_self">
+    <l>For more information pls </l>
+    Click here
+   </a>
+   <br>
+   <a href="https://www.amnhealthcare.com/blog/physician/locums/7-strategies-improve-maternal-infant-health/" target="_self">
+    <l>7 Strategies to Improve Maternal and Infant Health </l>
+    Click here
+   </a>
+ <br>
+   <a href="https://health.gov/myhealthfinder/pregnancy/doctor-and-midwife-visits/have-healthy-pregnancy" target="_self">
+    <l>Have a healthy pregnancy </l>
+    Click here
+   </a>
+
+    <p id="pythonOutput"></p>
+    <script>
+
+      
+        document.getElementById('runScript').addEventListener('click', () => {
+
+            function fetchPythonOutput() {
+            fetch('/python-output').then(response => response.text()).then(data => {
+                document.getElementById('pythonOutput').innerText = data;
+            });
+        }
+        fetchPythonOutput();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Class 3</title>
+  
+   <link rel="stylesheet"
+   href="class3_css.css" type="text/css">
+   
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+   <!-- <div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+    </div>-->
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6 main">
+                    </div>
+
+
+            <div class="col-md-3">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="result">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h>Class 3: Pathological</h><br>
+        <p1>Pathological factors affecting fetal health encompass genetic abnormalities (e.g., Down syndrome), maternal health complications (diabetes, hypertension), infections (Zika, syphilis), environmental hazards (toxins, alcohol), and placental issues. Fetal growth restriction, congenital anomalies, and fetal distress due to oxygen deficiency also impact development. 
+           Rh incompatibility, multiple pregnancies, and amniotic fluid irregularities further influence fetal well-being. 
+            Diagnosis involves screenings, ultrasounds, and genetic tests, enabling healthcare management to mitigate risks. 
+            Timely intervention and monitoring during pregnancy aim to optimize outcomes for both mother and fetus by addressing these complex pathological conditions, underscoring the importance of early detection and appropriate medical care.</p1>
+            <br>
+            <p1>SCROLL DOWN FOR MORE INFO</p1>
+        </div>
+    <br>
+    <p>Scroll down for link </p>
+    <a href="https://www.amnhealthcare.com/blog/physician/locums/7-strategies-improve-maternal-infant-health/" target="_self">
+        <l>7 Strategies to Improve Maternal and Infant Health </l>
+        Click here
+       </a>
+       <br>
+    <a href="https://health.gov/myhealthfinder/pregnancy/doctor-and-midwife-visits/have-healthy-pregnancy" target="_self">
+    <l>Have a healthy pregnancy </l>
+    Click here
+    </a>
+    <p id="pythonOutput"></p>
+    <script>
+
+      
+        document.getElementById('runScript').addEventListener('click', () => {
+
+            function fetchPythonOutput() {
+            fetch('/python-output').then(response => response.text()).then(data => {
+                document.getElementById('pythonOutput').innerText = data;
+            });
+        }
+        fetchPythonOutput();
+        });
+    </script>
+</body>
+
+</html>

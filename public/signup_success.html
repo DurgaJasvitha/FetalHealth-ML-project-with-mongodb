@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Class1</title>
+    <link rel="stylesheet"
+    href="class3_css.css" type="text/css">
+  
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-6 main">
+
+                
+
+            </div>
+
+
+            <div class="col-md-3">
+            </div>
+
+        </div>
+    </div>
+    <div class="result" >
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h> Class1: Normal</h> <br>
+        <p1 >A normal fetal condition in pregnancy signifies that the baby's development follows expected patterns without concerning issue Normal fetal conditions involve expected growth, stable heart rates indicating good oxygenation, consistent movements reflecting well-being absence of structural anomalies in scans, and maternal health free from complicatio Confirmation of a normal fetal condition assures both mother and baby of good health. Consistent prenatal care and evaluations play a crucial role in continual verifying the fetus's normal progression throughout the pregnancy, ensuring a reassuring state of well-being for both.</p1>
+        <br>
+        <p1>SCROLL DOWN FOR MORE INFO</p1>
+    </div>
+        <script src="script.js"></script>  
+        
+        <a href="https://www.amnhealthcare.com/blog/physician/locums/7-strategies-improve-maternal-infant-health/" target="_self">
+            <l>7 Strategies to Improve Maternal and Infant Health </l>
+            Click here
+           </a>
+           <br>
+           <a href="https://health.gov/myhealthfinder/pregnancy/doctor-and-midwife-visits/have-healthy-pregnancy" target="_self">
+            <l>Have a healthy pregnancy </l>
+            Click here
+           </a>
+  
+    <p id="pythonOutput"></p>
+    <script>
+
+      
+        document.getElementById('runScript').addEventListener('click', () => {
+
+            function fetchPythonOutput() {
+            fetch('/python-output').then(response => response.text()).then(data => {
+                document.getElementById('pythonOutput').innerText = data;
+            });
+        }
+        fetchPythonOutput();
+        });
+    </script>
+</body>
+
+</html>
